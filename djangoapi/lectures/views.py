@@ -8,3 +8,5 @@ from .serializers import LectureSerializers
 class LectureView(viewsets.ModelViewSet):
     queryset = lecture.objects.all()
     serializer_class = LectureSerializers
+    name = "Lecture API"
+    description = "API for managing lecture"
